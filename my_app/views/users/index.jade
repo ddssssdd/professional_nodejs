@@ -1,0 +1,8 @@
+H1 Users
+p User list should be here
+
+ul
+	-for(var username in users){
+		li 
+			a(href="/users/" + encodeURIComponent(username))= users[username].name
+	-};
